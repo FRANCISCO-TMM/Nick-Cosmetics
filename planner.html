@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Planner — Okome Ifeanyi Jonathan</title>
+<meta name="description" content="Interactive academic and study task planner for Okome Ifeanyi Jonathan's coursework, certifications, and internship deliverables.">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">OJ</span>
+      <span>Okome Ifeanyi Jonathan<small>Hardware &rarr; Network Security</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-menu">
+      <span></span>
+    </button>
+    <ul class="nav-list" id="primary-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html" aria-current="page">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding:56px 0;">
+    <div class="container" style="grid-template-columns:1fr;">
+      <div>
+        <p class="eyebrow">Academic planner</p>
+        <h1>Keep coursework, study goals, and deadlines in one place</h1>
+        <p class="hero-lede">Add a task, track it while it's active, and move it to done when it's finished. Tasks are saved in this browser, so your board is still here next time you visit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="planner-heading">
+    <div class="container">
+      <h2 id="planner-heading" style="position:absolute;left:-9999px;">Task planner</h2>
+
+      <div class="planner-board">
+        <form class="task-form" id="task-form" novalidate>
+          <h3 style="margin-top:0;font-size:1.05rem;">Add a task</h3>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="task-title">Task title</label>
+              <input type="text" id="task-title" name="title" placeholder="e.g. Read CCNA Chapter 4" required>
+            </div>
+            <div class="field">
+              <label for="task-course">Course or subject</label>
+              <input type="text" id="task-course" name="course" placeholder="e.g. Networking, COS 106">
+            </div>
+            <div class="field">
+              <label for="task-due">Due date</label>
+              <input type="date" id="task-due" name="due">
+            </div>
+            <div class="field">
+              <label for="task-priority">Priority</label>
+              <select id="task-priority" name="priority">
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Add task</button>
+          </div>
+        </form>
+
+        <div>
+          <div class="task-columns">
+            <div class="task-col">
+              <h3>To do (<span id="todo-count">0</span>)</h3>
+              <ul class="task-list" id="todo-list"></ul>
+              <p class="empty-state" id="todo-empty">Nothing pending — add a task on the left to get started.</p>
+            </div>
+            <div class="task-col">
+              <h3>Completed (<span id="done-count">0</span>)</h3>
+              <ul class="task-list" id="done-list"></ul>
+              <p class="empty-state" id="done-empty">Completed tasks will appear here.</p>
+              <button type="button" class="btn btn-outline" id="clear-done" style="margin-top:14px;">Clear completed</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="container two-col">
+      <div class="reveal">
+        <p class="eyebrow">How it works</p>
+        <h2>Built for real coursework</h2>
+        <p>Every task carries a course label, an optional due date, and a priority level, so the board doubles as a lightweight study log across COS 106, Security+ revision, and CCNA preparation.</p>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">Data &amp; privacy</p>
+        <h2>Where your tasks live</h2>
+        <p>Tasks are stored locally in your browser using <code>localStorage</code> — nothing is sent to a server. Clearing your browser data will reset the board.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="color:#fff;"><span class="brand-mark" aria-hidden="true">OJ</span><span>Okome Ifeanyi Jonathan</span></div>
+        <p style="margin-top:10px;max-width:34ch;color:#9FB1CC;">Cybersecurity professional based in Lagos, Nigeria — securing systems from the physical layer up.</p>
+      </div>
+      <nav aria-label="Footer">
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="planner.html">Planner</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-links" style="margin-top:12px;">
+          <a href="https://github.com/Cybernerdify" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/ifeanyijonathanokome" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="mailto:Ifywilsonjoe@gmail.com">Email</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">© <span data-year>2026</span> Okome Ifeanyi Jonathan · Built for COS 106, Miva Open University</div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
