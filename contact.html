@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Okome Ifeanyi Jonathan</title>
+<meta name="description" content="Get in touch with Okome Ifeanyi Jonathan for repairs, network security questions, or collaboration.">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">OJ</span>
+      <span>Okome Ifeanyi Jonathan<small>Hardware &rarr; Network Security</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-menu">
+      <span></span>
+    </button>
+    <ul class="nav-list" id="primary-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding:56px 0;">
+    <div class="container" style="grid-template-columns:1fr;">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h1>Let's connect</h1>
+        <p class="hero-lede">Have a repair, a network question, or an opportunity in mind? Send a message and I'll get back to you within 1–2 business days.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="contact-heading">
+    <div class="container two-col">
+      <div class="reveal">
+        <p class="eyebrow">Reach me directly</p>
+        <h2 id="contact-heading">Contact details</h2>
+        <ul class="check-list">
+          <li>Email: <a href="mailto:Ifywilsonjoe@gmail.com">Ifywilsonjoe@gmail.com</a></li>
+          <li>Phone: <a href="tel:+2349036039035">+234 903 603 9035</a></li>
+          <li>Location: Lagos, Nigeria</li>
+          <li>GitHub: <a href="https://github.com/Cybernerdify" target="_blank" rel="noopener">Cybernerdify ↗</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/ifeanyijonathanokome" target="_blank" rel="noopener">ifeanyijonathanokome ↗</a></li>
+        </ul>
+      </div>
+
+      <div class="card reveal">
+        <h3 style="margin-top:0;">Send a message</h3>
+        <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+
+        <form id="contact-form" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="cf-name">Full name</label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" required>
+              <p class="error-msg" id="err-name"></p>
+            </div>
+            <div class="field">
+              <label for="cf-email">Email address</label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" required>
+              <p class="error-msg" id="err-email"></p>
+            </div>
+            <div class="field">
+              <label for="cf-phone">Phone number</label>
+              <input type="tel" id="cf-phone" name="phone" autocomplete="tel" placeholder="Digits only, e.g. 2349036039035" required>
+              <p class="error-msg" id="err-phone"></p>
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" required></textarea>
+              <p class="error-msg" id="err-message"></p>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="color:#fff;"><span class="brand-mark" aria-hidden="true">OJ</span><span>Okome Ifeanyi Jonathan</span></div>
+        <p style="margin-top:10px;max-width:34ch;color:#9FB1CC;">Cybersecurity professional based in Lagos, Nigeria — securing systems from the physical layer up.</p>
+      </div>
+      <nav aria-label="Footer">
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="planner.html">Planner</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-links" style="margin-top:12px;">
+          <a href="https://github.com/Cybernerdify" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/ifeanyijonathanokome" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="mailto:Ifywilsonjoe@gmail.com">Email</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">© <span data-year>2026</span> Okome Ifeanyi Jonathan · Built for COS 106, Miva Open University</div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
